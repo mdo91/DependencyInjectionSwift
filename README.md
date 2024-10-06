@@ -44,8 +44,10 @@ struct Injected<T> {
 ```
 
 **How the `@Injected` Property Wrapper Works:**
-**Injected Dependencies:** The `@Injected` property wrapper automatically fetches the required dependency from the DependencyInjectionContainer when needed, eliminating the need for manual dependency passing or initializer injection.
-**Use Case:** In the **ViewModel (WeatherViewModel)**, we use `@Injected` to automatically inject the FetchWeatherUseCase without needing to manually pass it through the initializer.
-**Repository & Service:** The repository (WeatherRepositoryImpl) and use case (FetchWeatherUseCaseImpl) also use `@Injected` to inject their respective dependencies like WeatherService and WeatherRepository.
+- **Injected Dependencies:** The `@Injected` property wrapper automatically fetches the required dependency from the DependencyInjectionContainer when needed, eliminating the need for manual dependency passing or initializer injection.
+  
+- **Use Case:** In the **ViewModel (WeatherViewModel)**, we use `@Injected` to automatically inject the FetchWeatherUseCase without needing to manually pass it through the initializer.
+  
+- **Repository & Service:** The repository (WeatherRepositoryImpl) and use case (FetchWeatherUseCaseImpl) also use `@Injected` to inject their respective dependencies like WeatherService and WeatherRepository.
 
 
