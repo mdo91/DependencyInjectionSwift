@@ -20,7 +20,7 @@ class WeatherServiceImpl: WeatherService {
     // TODO: add your API key from `https://api.openweathermap.org`
     // ...
     // "ADD_YOUR_API_KEY"
-    private let apiKey = "d721ed36c6cf234374a40b9a3d4069c7"
+    private let apiKey = ""
     var weatherData: WeatherData?
     
     func fetchWeather(for city: String) async throws -> WeatherData {
